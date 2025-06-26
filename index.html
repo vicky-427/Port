@@ -770,6 +770,95 @@
     margin-top: 5px;
     height: 15px;
 }
+@media (max-width: 768px) {
+    /* Increase hero image size */
+    .hero-image img {
+        max-width: 80%;
+        margin: 0 auto 40px;
+    }
+
+    /* Adjust hero text layout */
+    .hero-text {
+        text-align: center;
+    }
+
+    /* Center social icons */
+    .social-icons {
+        justify-content: center;
+    }
+
+    /* Improve skills section */
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-skills {
+        width: 100%;
+    }
+
+    .skill-item {
+        margin-bottom: 20px;
+    }
+
+    /* Increase font sizes for better readability */
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .about-text h3 {
+        font-size: 22px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+    }
+
+    .skill-info span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Further adjustments for very small screens */
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+    }
+
+    /* Stack buttons vertically */
+    .hero-text .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .hero-text .btn-outline {
+        margin-left: 0;
+    }
+
+    /* Adjust skill bars */
+    .skill-bar {
+        height: 8px;
+    }
+
+    /* Increase project card width */
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Add these to your existing :root variables */
+:root {
+    --mobile-padding: 15px;
+    --skill-bar-height-mobile: 8px;
+}
     </style>
 </head>
 <body>
